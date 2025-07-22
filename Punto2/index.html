@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CARRITO DE COMPRAS</h1>
+    <p>Lapicero negro</p>
+    <p>$<span id="precio">10</span></p>
+    <button onclick="agregarCarrito('producto1',10)">Agregar al carrito</button>
+    
+
+    <p>Borrador</p>
+    <p>$<span id="precio1">20</span></p>
+    <button onclick="agregarCarrito('producto2',20)">Agregar al carrito</button>
+
+    <p>cartuchera</p>
+    <p>$<span id="precio2">25</span></p>
+    <button onclick="agregarCarrito('producto3',25)">Agregar al carrito</button>
+
+    <p>Total de productos<span id="total-items"> 0 </span></p>
+    <p>Total a pagar<span id="total-precio"> 0 </span></p>
+
+    <button id="Vaciar" onclick="vaciarCarrito()">Vaciar carrito</button>
+    
+    <script src="/Punto2/script.js"></script>
+</body>
+</html>
