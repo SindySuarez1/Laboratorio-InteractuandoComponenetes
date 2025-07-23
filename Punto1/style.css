@@ -1,0 +1,45 @@
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #caccce;
+    color: #3a3b4f;
+    padding: 40px;
+    text-align: center;
+}
+
+
+h2 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 40px;
+}
+
+
+p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+/*  me gusta */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #534f95;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #676363;
+}
+
+/* Contadores */
+span {
+    font-weight: bold;
+    color: #421ed0;
+    font-size: 20px;
+}
+
