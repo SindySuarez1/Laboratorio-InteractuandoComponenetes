@@ -3,28 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/Punto2/style.css">
+    <title>Carrito de compras</title>
 </head>
 <body>
-    <h1>CARRITO DE COMPRAS</h1>
-    <p>Lapicero negro</p>
-    <p>$<span id="precio">10</span></p>
-    <button onclick="agregarCarrito('producto1',10)">Agregar al carrito</button>
-    
+    <h1>
+        <img src="/Punto2/carrito.jpg" alt="carrito"> 
+        CARRITO DE COMPRAS
+    </h1>
 
-    <p>Borrador</p>
-    <p>$<span id="precio1">20</span></p>
-    <button onclick="agregarCarrito('producto2',20)">Agregar al carrito</button>
+    <div class="productos">
+        <div class="producto">
+            <p>Lapicero</p>
+            <p>$<span id="precio">10</span></p>
+            <button onclick="agregarCarrito('Lapicero',10)">Agregar al carrito</button>
+        </div>
 
-    <p>cartuchera</p>
-    <p>$<span id="precio2">25</span></p>
-    <button onclick="agregarCarrito('producto3',25)">Agregar al carrito</button>
+        <div class="producto">
+            <p>Borrador</p>
+            <p>$<span id="precio1">20</span></p>
+            <button onclick="agregarCarrito('Borrador',20)">Agregar al carrito</button>
+        </div>
 
-    <p>Total de productos<span id="total-items"> 0 </span></p>
-    <p>Total a pagar<span id="total-precio"> 0 </span></p>
+        <div class="producto">
+        <!--<img src="/Punto2/lapicero.webp" alt="carrito">-->
+            <p>cartuchera</p>
+            <p>$<span id="precio2">25</span></p>
+            <button onclick="agregarCarrito('Cartuchera',25)">Agregar al carrito</button>
+        </div>
+    </div>
 
-    <button id="Vaciar" onclick="vaciarCarrito()">Vaciar carrito</button>
-    
-    <script src="/Punto2/script.js"></script>
+            <p>Total de productos: <span id="total-items">  0 </span></p>
+            <p>Total a pagar: $<span id="total-precio">  0 </span></p>
+
+            <button id="vaciar" onclick="vaciarCarrito()">Vaciar carrito</button>
+            
+            <script src="/Punto2/script.js"></script>
 </body>
 </html>
